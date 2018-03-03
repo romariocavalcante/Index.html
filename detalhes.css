@@ -1,0 +1,20 @@
+body{
+	background-color: black;
+}
+h2{
+	color: white;
+	font-size: 25px;
+}
+a{
+	font-size: 20px;
+}
+#button{
+	width: 6%;
+	margin-left: 100%;
+	margin:auto;
+	margin-top: 20px;
+	background: green;
+}
+#cxButton{
+	width: 120px;
+}
