@@ -4,7 +4,6 @@
 	box-sizing: border-box;
 }
 
-
 main {
 	height: 100vh;
 	display: grid;
@@ -14,21 +13,18 @@ main {
 	padding: 2%;
 }
 
-main > header {
+main>header {
 	display: flex;
 	justify-content: center;
 }
 
-main > header > h1 {
+main>header>h1 {
 	font-size: 35px;
 }
 
-main > section  {
+main>section {
 	display: flex;
 	justify-content: center;
-}
-
-table {
 }
 
 td {
@@ -73,7 +69,4 @@ input {
 
 #valid {
 	width: 10%;
-}
-
-#neces {
 }
