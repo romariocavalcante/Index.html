@@ -1,82 +1,79 @@
-body{
-	background-color: black;
-}
-h1{
-	color: white;
-	text-align: center;
-}
-label{
-	color: white;
-	font-size: 20px;
-}
-input{
-	margin-top: 3px;
-	font-size: 18px;
-}
-#form{
-	margin-left: 100%;
-	margin: auto;
-	width: 30%;	
-}
-#nome{
-	width: 380px;
-	font-size: 18px;	
-}
-#rg{
-	width: 120px;
-	margin-top: 3px;
-}
-#ems{
-	margin-left: 30%;
-	font-size: 20px;
-}
-#emissor{
-	width: 101px;
-	font-size: 18px;
-	margin-left: 10%;
-}
-#d{
-	width: 10%;	
-}
-#cel{
-	margin-left: 10%;
-}
-#celular{
-	width: 40%;
-}
-#dateS{
-	margin-left: 20%;
-}
-#date{
-	width: 160px;
-	text-align: center;
-	font-size: 16px;
-}
-#end{
-	width: 320px;
-}
-#cidade{
-	width: 200px;	
-}
-#est{
-	margin-left: 40%;	
-}
-#estado{
-	width: 80px;	
-}
-#email{	
-	width: 370px;	
-}
-#neces{
-	margin-left: 2%;
-}
-#valid{
-	margin-left: 10%;
-	margin-top: 15px;	
-}
-#enviar{
-	font-size: 16px;
-	margin-left: 315px;
-	margin-top: 20px;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
+
+main {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: .1fr 1fr;
+	justify-content: center;
+	padding: 2%;
+}
+
+main > header {
+	display: flex;
+	justify-content: center;
+}
+
+main > header > h1 {
+	font-size: 35px;
+}
+
+main > section  {
+	display: flex;
+	justify-content: center;
+}
+
+table {
+}
+
+td {
+	height: 70px;
+	padding: 5px;
+}
+
+input {
+	padding: 6px 5px 6px 5px;
+	width: 100%;
+}
+
+#td-telefone {
+	display: grid;
+	grid-template-columns: .4fr 1fr;
+	align-items: center;
+}
+
+.ddd {
+	margin-right: 2px;
+}
+
+.telefone {
+	margin-left: 2px;
+}
+
+#date {
+	padding: 3.5px;
+}
+
+#td-genero {
+	display: flex;
+	align-items: center;
+}
+
+#pdc {
+	height: 50px;
+	display: flex;
+	align-items: center;
+	padding: 10px;
+}
+
+#valid {
+	width: 10%;
+}
+
+#neces {
+}

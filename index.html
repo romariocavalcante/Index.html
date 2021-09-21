@@ -1,19 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 	<title>Concursos.com</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="index.css">	
+	<link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-	<h1> Lista de Concursos disponíveis </h1>
-	<div id="position">
-		<!-- Link funcional -->		
-		<a href="detalhes.html"><img src="img/bancoDoBrasil.png" alt="iconBB" id="iconBB"> Banco do Brasil</a><br>
-		<!-- Link não funcional -->
-		<a href="#" onclick="alert('link temporariamente indisponivel')"><img src="img/forcaAereaBrasileira.png" alt="forcaAereaBrasileira" id="fab"> Força Aérea Brasileira</a><br>
-		<!-- Link não funcional -->
-		<a href="#" onclick="alert('link temporariamente indisponivel')"><img src="img/ministerioDaFazenda.png" alt="ministerioDaFazenda" id="min"> Ministério da Fazenda</a>
-	</div>
+	<main>
+		<div id="titulo">
+			<h1> Lista de Concursos disponíveis </h1>
+		</div>
+		<div id="position">
+			<table>
+				<tr>
+					<td>
+						<a href="detalhes.html">
+							<img src="img/bancoDoBrasil.png" alt="iconBB" id="iconBB">
+							<td>
+								Banco do Brasil
+							</td>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" onclick="alert('link temporariamente indisponivel')">
+							<img src="img/forcaAereaBrasileira.png" alt="forcaAereaBrasileira" id="fab">
+							<td>
+								Força Aérea Brasileira
+							</td>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" onclick="alert('link temporariamente indisponivel')">
+							<img src="img/ministerioDaFazenda.png" alt="ministerioDaFazenda" id="min">
+							<td>
+								Ministério da Fazenda
+							</td>
+						</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+		</div>
+	</main>
 </body>
+
 </html>

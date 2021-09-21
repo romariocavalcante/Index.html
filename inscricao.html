@@ -1,76 +1,118 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 	<title>Ficha de Inscrição</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="inscricao.css">	
+	<link rel="stylesheet" href="inscricao.css">
 </head>
-<body>
-	<h1> Ficha de Inscrição </h1>
-	<div id="formulario">	
-		<form>
-	    	<table>
-	    		<td>
-	    			<!-- entrada para nome -->
-			        <label for="name"><b> Nome </b></label><br>
-			        <input title="nome" type="text" id="nome" /><br>
 
-			        <!-- entrada para rg e orgao emissor -->
-		    		<label for="rg"><b> RG </b></label>
-		    		<label for="orgao emissor" id="emissorL"><b> Orgão Emissor </b></label>
-		    		<br>
-			        <input title="rg" type="text" id="rg" />
-			        <input title="orgao emissorI" type="text" id="emissor" />	
-			        <br>
-			        <!-- entrada para cpf -->
-			        <label for="cpf"><b> CPF </b></label>
-			        <br>
-					<input type="text" name="cpf" id="cpf" />
-					<br>
-					<!-- entrada para contato -->
-					<label for="ddd"><b> DDD </label>
-					<label for="contato" id="cel"><b> Celular </b></label>
-					<label for="date" id="dateS"><b> Nascimento </b></label>
-					<br>
-					<input type="text" name="ddd" id="d" />									
-					<input type="tel" name="number" id="celular" />
-					<input title="dia/mês/ano" type="date" id="date" /> 
-					<br><br>			
-		    		<!-- entrada para sexo -->
-		    		<label for="sexo"><b>Gênero:</b></label> 
-			        <input type="radio" name="sexo" value="M" class="sexo">			        
-			        <label for="masculino" class="sexo"><b>Masculino</b></label>
-			        <input type="radio" name="sexo" value="F" class="sexo">
-			    	<label for="feminino" class="sexo"><b>Feminino</b></label>
-			    	<br><br>
-			    	<!-- entrada para endereco -->
-					<label for="endereco"><b> Endereço </b></label>
-					<br>
-					<input type="text" name="endereco" id="end">
-					<br>
-					<!-- entrada para bairro -->
-					<label for="bairro"><b> Bairro </b></label>
-					<br>
-					<input type="text" name="bairro" id="bairro">
-					<br>
-					<!-- entrada para cidade estado -->
-					<label for="cidade" ><b> Cidade </b></label>
-					<label for="estado" id="est"><b> Estado </b></label>
-					<br>
-					<input type="text" name="cidade" id="cidade">
-					<input type="text" name="estado" id="estado">				
-					<br>
-					<!-- entrada para email-->
-					<label for="email" id="mail"><b>E-mail:</b></label><br>
-					<input type="email" name="email" id="email">
-		    	</td>
-	    	</table>
-	    	<label for="necessidades" id="nes"></label>
-	    	<input type="checkbox" name="valid" id="valid">
-	    	<label for="necessidades especiais" id="neces">Possui 
-	    	necessidades especiais?</label>
-	    	<input type="submit" onclick="alert('Inscrição realizada com sucesso!')" value="Enviar" id="enviar">
-		</form>			
-	</div>
+<body>
+	<main>
+		<header>
+			<h1> Ficha de Inscrição </h1>
+		</header>
+		<section>
+			<form action="index.html">
+				<table>
+					<tr>
+						<td>
+							<label for="name"><b> Nome </b></label>
+							<br>
+							<input title="nome" type="text" id="nome" />
+						</td>
+						<td>
+							<label for="rg"><b> RG </b></label><br>
+							<input title="rg" type="text" id="rg" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="orgao emissor" id="emissorL"><b> Orgão Emissor </b></label><br>
+							<input title="orgao emissorI" type="text" id="emissor" />
+						</td>
+						<td>
+							<label for="cpf"><b> CPF </b></label><br>
+							<input type="text" name="cpf" id="cpf" />
+						</td>
+					</tr>
+					<tr>
+						<td id="td-telefone">
+							<div class="ddd">
+								<label for="ddd"><b> DDD </label><br>
+								<input type="text" name="ddd" id="d" />
+							</div>
+							<div class="telefone">
+								<label for="contato" id="cel"><b> Celular </b></label><br>
+								<input type="tel" name="number" id="celular" />
+							</div>
+						</td>
+						<td>
+							<label for="date" id="dateS"><b> Nascimento </b></label>
+							<br>
+							<input title="dia/mês/ano" type="date" id="date" />
+						</td>
+					</tr>
+					<tr>
+
+					</tr>
+					<tr>
+						<td id="td-genero">
+							<label for="sexo"><b>Gênero:</b></label>
+							<input type="radio" name="sexo" value="M" class="sexo">
+							<label for="masculino" class="sexo"><b>Masculino</b></label>
+							<input type="radio" name="sexo" value="F" class="sexo">
+							<label for="feminino" class="sexo"><b>Feminino</b></label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="endereco"><b> Endereço </b></label>
+							<br>
+							<input type="text" name="endereco" id="end">
+							<br>
+						</td>
+						<td>
+							<label for="bairro"><b> Bairro </b></label>
+							<br>
+							<input type="text" name="bairro" id="bairro">
+							<br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="cidade"><b> Cidade </b></label><br>
+							<input type="text" name="cidade" id="cidade">
+						</td>
+						<td>
+							<label for="estado" id="est"><b> Estado </b></label><br>
+							<input type="text" name="estado" id="estado">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="email" id="mail"><b>E-mail:</b></label><br>
+							<input type="email" name="email" id="email">
+						</td>
+					</tr>
+				</table>
+				<div id="pdc">
+					<label for="necessidades especiais" id="neces">Possui necessidades especiais?</label>
+					<input type="checkbox" name="valid" id="valid">
+				</div>
+				<input type="submit" onclick="alert('Inscrição realizada com sucesso!')" value="Enviar" id="enviar">
+			</form>
+
+		</section>
+
+	</main>
+	<!-- <div id="formulario">
+		
+			
+			
+			
+		</form> -->
+	</div> -->
 </body>
+
 </html>
